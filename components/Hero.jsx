@@ -47,7 +47,7 @@ const Hero = () => {
 
           <a
             href="#contact"
-            className=" text-lg font-medium flex bg-slate-100 text-[rgb(30,58,138)] px-6 py-2 my-2 rounded-xl transition"
+            className=" text-lg font-medium flex justify-center items-center bg-slate-100 text-[rgb(30,58,138)] px-6 py-2 my-2 rounded-xl transition "
           >
             <Star />
             Start Healing Today
