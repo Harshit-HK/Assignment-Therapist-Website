@@ -6,21 +6,18 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
-import MobileSidebar from "@/components/Ms";
 
 export default function Home() {
   return (
     <main>
-      
-      {/* <MobileSidebar/> */}
       <Hero />
-      <ExpSessions/>
+      <ExpSessions />
       <Services />
-      <Schedule/>
+      <Schedule />
       <About />
-      <Testimonials/>
+      <Testimonials />
       <FAQ />
-      <Contact /> 
+      <Contact />
     </main>
   );
 }
