@@ -63,11 +63,11 @@ const Contact = () => {
     >
       <div className="md:w-1/2">
         <div className="flex justify-center ">
-          <div className="bg-[rgb(218,245,241)]rounded-xl p-3 rounded-lg bg-[rgb(218,245,241)]">
+          <div className="bg-[rgb(218,245,241)]rounded-xl p-3 rounded-lg bg-[rgb(218,245,241)] mt-10 w-[90%] md:w-[70%]">
             <img
               src="https://res.cloudinary.com/dyjopn2oc/image/upload/v1751639205/image_lgmyh0.webp"
               alt=""
-              className=" rounded-lg"
+              className="  rounded-lg"
             />
           </div>
         </div>
