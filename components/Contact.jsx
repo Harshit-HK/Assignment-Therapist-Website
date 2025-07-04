@@ -65,7 +65,7 @@ const Contact = () => {
         <div className="flex justify-center ">
           <div className="bg-[rgb(218,245,241)]rounded-xl p-3 rounded-lg bg-[rgb(218,245,241)]">
             <img
-              src="https://img.notionusercontent.com/s3/prod-files-secure%2Fe434db5d-d615-814a-b090-0003034cd63a%2Ffcdeffc3-7fce-4ca7-a4ea-a0888f182399%2Fimage.png/size/w=290?exp=1751634834&sig=BHxaLA_5UyKB-EOEyhcqS__9ojsmxCZE0DWC8_Wdj7U&id=21f4db5d-d615-8076-8a1c-fd184ea4e5df&table=block"
+              src="https://res.cloudinary.com/dyjopn2oc/image/upload/v1751639205/image_lgmyh0.webp"
               alt=""
               className=" rounded-lg"
             />
