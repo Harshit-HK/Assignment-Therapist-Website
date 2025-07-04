@@ -54,69 +54,49 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Desktop Menu */}
-        {/* <ul className="hidden lg:flex space-x-8 text-gray-800">
-          {menuItems.map((item) => (
-            <li
-              key={item.id}
-              className="cursor-pointer rounded-md p-2 hover:bg-white"
-              onClick={() => handleMenuItemClick(item.id)}
-            >
-              {item.label}
-            </li>
-          ))}
-        </ul> */}
+        <ul className="hidden lg:flex space-x-8 text-gray-800 relative">
+          {/* Services with Dropdown */}
+          <li className="relative group cursor-pointer p-2">
+            <span 
+            onClick={() => handleMenuItemClick("services")}
+             className="hover:bg-white rounded-md px-2 py-1 inline-block">
+              Services
+            </span>
 
+            <div className="absolute top-full left-0 flex w-[600px] p-3 bg-white shadow-lg rounded-md opacity-0 scale-95 pointer-events-none transition-all duration-400 group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto z-50">
+              <div className="flex-1 p-3 hover:bg-[rgb(181,219,223)]/60 rounded-lg transition duration-200">
+                <p className="font-semibold text-sm">
+                  Christian Individual Counseling in Richmond, VA
+                </p>
+                <p className="text-sm text-gray-600">
+                  Discover Peace, Purpose, and God’s Truth in Richmond, VA.
+                </p>
+              </div>
+              <div className="flex-1 p-3 hover:bg-[rgb(181,219,223)]/60 rounded-lg transition duration-200">
+                <p className="font-semibold text-sm">
+                  Christian Couples Counseling in Richmond, VA
+                </p>
+                <p className="text-sm text-gray-600">
+                  Heal Your Relationship, Grow Closer to God Together in
+                  Richmond.
+                </p>
+              </div>
+            </div>
+          </li>
 
-
-
-<ul className="hidden lg:flex space-x-8 text-gray-800 relative">
-  {/* Services with Dropdown */}
-  <li className="relative group cursor-pointer p-2">
-  <span className="hover:bg-white rounded-md px-2 py-1 inline-block">Services</span>
-
-  <div
-    className="absolute top-full left-0 flex w-[600px] p-3 bg-white shadow-lg rounded-md opacity-0 scale-95 pointer-events-none transition-all duration-400 group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto z-50"
-  >
-    <div className="flex-1 p-3 hover:bg-[rgb(181,219,223)]/60 rounded-lg transition duration-200">
-      <p className="font-semibold text-sm">
-        Christian Individual Counseling in Richmond, VA
-      </p>
-      <p className="text-sm text-gray-600">
-        Discover Peace, Purpose, and God’s Truth in Richmond, VA.
-      </p>
-    </div>
-    <div className="flex-1 p-3 hover:bg-[rgb(181,219,223)]/60 rounded-lg transition duration-200">
-      <p className="font-semibold text-sm">
-        Christian Couples Counseling in Richmond, VA
-      </p>
-      <p className="text-sm text-gray-600">
-        Heal Your Relationship, Grow Closer to God Together in Richmond.
-      </p>
-    </div>
-  </div>
-</li>
-
-
-  {/* Rest of the menu items */}
-  {menuItems
-    .filter((item) => item.id !== "services")
-    .map((item) => (
-      <li
-        key={item.id}
-        className="cursor-pointer rounded-md p-2 hover:bg-white"
-        onClick={() => handleMenuItemClick(item.id)}
-      >
-        {item.label}
-      </li>
-    ))}
-</ul>
-
-
-        
-
-
-
+          {/* Rest of the menu items */}
+          {menuItems
+            .filter((item) => item.id !== "services")
+            .map((item) => (
+              <li
+                key={item.id}
+                className="cursor-pointer rounded-md p-2 hover:bg-white"
+                onClick={() => handleMenuItemClick(item.id)}
+              >
+                {item.label}
+              </li>
+            ))}
+        </ul>
 
         {/* Mobile Menu Icon */}
         <div className="lg:hidden">
