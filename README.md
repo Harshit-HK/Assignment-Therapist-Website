@@ -7,11 +7,10 @@ A modern, responsive website designed for a therapy and counseling practice. Thi
 ## ✨ Live Site
 
 **\[Coming Soon]**
-A live demo will be available within the next hour. You will be able to preview the full site at:
+A live demo is able to preview the full site at:
 
-```
 [Therapist](https://assignment-therapist-website-theta.vercel.app/)
-```
+
 
 ## 🎓 Tech Stack
 
